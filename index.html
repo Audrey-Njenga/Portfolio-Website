@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta
+      name="description"
+      content="Audrey Njenga, Full-Stack Developer. Explore a curated board of projects, experiments, and the decisions behind them."
+    />
+    <title>Audrey Njenga — Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Audrey Njenga home"
+        ><span class="brand-icon" aria-hidden="true">a.</span> Audrey Njenga</a
+      >
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Work</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">AUDREY NJENGA / FULL-STACK DEVELOPER</p>
+        <h1 id="intro-title">
+          From first sketch to <em>working software</em
+          ><span class="coral">.</span>
+        </h1>
+        <div class="intro-bottom">
+          <p>
+            Hi, I’m Audrey. I build software that makes complicated tasks feel
+            simple, from the first interaction to the systems behind it.
+          </p>
+        </div>
+      </section>
+      <section
+        class="collection"
+        id="projects"
+        aria-labelledby="collection-title"
+      >
+        <div class="collection-heading"></div>
+        <div class="filter-row">
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filter projects by category"
+          >
+            <button
+              type="button"
+              class="filter active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-filter="full-stack"
+              aria-pressed="false"
+            >
+              Full-stack
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-filter="frontend"
+              aria-pressed="false"
+            >
+              AI/Data
+            </button>
+            <button
+              type="button"
+              class="filter"
+              data-filter="backend"
+              aria-pressed="false"
+            >
+              IOT
+            </button>
+          </div>
+        </div>
+        <div class="masonry" id="grid">
+          <article class="card identity-card" id="about">
+            <div class="card-topline"><span>01 / ABOUT</span></div>
+            <div class="identity-art" aria-hidden="true">
+              <div class="identity-orbit"></div>
+              <div class="identity-face">AN</div>
+            </div>
+            <h3>Audrey <em>Njenga.</em></h3>
+            <p class="identity-role">Full-Stack Developer</p>
+            <p>
+              4+ years professional experience building features for large-scale
+              production systems, collaborating with diverse teams across
+              timezones and iteratively improving software quality and user
+              experience.
+            </p>
+            <details class="about-details">
+              <summary>
+                A little more about me <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                I'm a lifelong learner, I love projects where I get to combine
+                creativity with technical problem-solving. I pick up new
+                technologies quickly and thrive in dynamic environments.
+              </p>
+              <a class="text-link" href="#contact">Let's talk</a>
+            </details>
+          </article>
+          <article class="card skills-card" id="toolkit">
+            <div class="card-topline"><span>02 / TECHNICAL SKILLS</span></div>
+            <h3>My <em>toolkit.</em></h3>
+            <dl class="skill-groups">
+              <div>
+                <dt>Frontend/Backend</dt>
+                <dd>React, Typescript, .NET, Node.js, Python</dd>
+              </div>
+              <div>
+                <dt>AI</dt>
+                <dd>Langchain, Semantic Kernel, RAG, AI search</dd>
+              </div>
+              <div>
+                <dt>Engineering</dt>
+                <dd>
+                  REST APIs, CI/CD, App insights/Telemetry, Testing, Incident
+                  response.
+                </dd>
+              </div>
+            </dl>
+          </article>
+          <article
+            class="card project-card featured-card"
+            id="portfolio-project"
+            data-category="frontend"
+            data-search="portfolio website frontend html css javascript accessibility responsive design"
+          >
+            <div class="project-art art-cobalt">
+              <span class="art-chip">FEATURED / BUILT</span>
+              <div class="browser-mock" aria-hidden="true">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i><span>Predictive AI</span>
+                </div>
+                <div class="mock-page">
+                  <small>Pharmacy Stocking</small>
+                  <strong
+                    ><em>Powering data driven stock decisions.</em></strong
+                  >
+                  <div class="mock-tiles">
+                    <span></span><span>PHARMACY STOCKING</span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <p class="mini-label">PHARMACY STOCKING</p>
+              <h3>Pharmacy Stocking System</h3>
+              <p>
+                An AI powered system to manage and track pharmacy stock
+                efficiently.
+              </p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>Python</span
+                ><span>Next.js</span>
+              </div>
+              <button
+                class="project-open project-cta"
+                type="button"
+                data-project="portfolio"
+                aria-haspopup="dialog"
+              >
+                Read the build story
+              </button>
+              <div class="project-links">
+                <a class="text-link" href="#top">Back to the portfolio</a
+                ><a
+                  class="text-link"
+                  href="https://github.com/Audrey-Njenga/Portfolio-Website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Portfolio source on GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- <article class="card note-card">
+            <div class="card-topline">
+              <span>NOTE TO SELF</span
+              ><span class="note-stamp" aria-hidden="true">✳</span>
+            </div>
+            <h3>
+              Make it useful.<br />Make it clear.<br /><em
+                >Then make<br />it delightful.</em
+              >
+            </h3>
+            <p>
+              A design principle for this board: personality should invite
+              exploration, not get in the way of understanding.
+            </p>
+          </article> -->
+
+          <article class="card experience-card">
+            <div class="card-topline">
+              <span>03 / EXPERIENCE</span
+              ><span class="small-label">MICROSOFT</span>
+            </div>
+            <h3>Along the <em>way.</em></h3>
+            <ol class="timeline">
+              <li>
+                <p class="mini-label">SEPTEMBER 2022-DECEMBER 2026</p>
+                <h4>Software Engineer II, Microsoft</h4>
+                <p>
+                  Delivered end-to-end cloud application features using React,
+                  TypeScript, .NET and Azure, building scalable AI-powered data
+                  processing workflows while improving search performance,
+                  observability, accessibility and usability
+                </p>
+              </li>
+            </ol>
+          </article>
+          <article
+            class="card project-card"
+            data-category="full-stack"
+            data-search="full-stack project one template end to end product"
+          >
+            <div class="project-art art-coral">
+              <span class="art-chip">CASE-STUDY TEMPLATE / 02</span>
+              <div class="product-poster" aria-hidden="true">
+                <span>THE WHOLE PICTURE</span
+                ><strong>From idea<br />to <em>interaction.</em></strong>
+                <div class="poster-path">
+                  <b>01</b><i></i><b>02</b><i></i><b>03</b>
+                </div>
+                <small>INTERFACE → LOGIC → DATA</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <p class="mini-label">FULL-STACK / NOT YET ADDED</p>
+              <h3>Emergency Room Intake Form App</h3>
+              <p>
+                A space to show how a real user need becomes a complete working
+                product.
+              </p>
+              <button
+                class="project-open project-cta"
+                type="button"
+                data-project="one"
+                aria-haspopup="dialog"
+                aria-label="Explore the full-stack story outline"
+              >
+                Explore the story outline
+              </button>
+            </div>
+          </article>
+          <article
+            class="card project-card"
+            data-category="frontend"
+            data-search="frontend project two template interface design user experience"
+          >
+            <div class="project-art art-lilac">
+              <span class="art-chip">FEATURED / BUILT</span>
+              <div class="type-poster" aria-hidden="true">
+                <span>Responsive and accurate</span
+                ><strong>Made<br />to <em>feel seamless.</em></strong>
+                <small>GOOD DESIGN DOES SOMETHING.</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <p class="mini-label">AI / RAG</p>
+              <h3>Customer support app</h3>
+              <p>
+                A chat based helper for your online store that provides seamless
+                support.
+              </p>
+              <button
+                class="project-open project-cta"
+                type="button"
+                data-project="two"
+                aria-haspopup="dialog"
+                aria-label="Explore the frontend story outline"
+              >
+                Explore the story outline
+              </button>
+            </div>
+          </article>
+          <article
+            class="card project-card"
+            data-category="backend"
+            data-search="backend project three template api reliability data"
+          >
+            <div class="project-art art-ink">
+              <span class="art-chip">FEATURED / BUILT</span>
+              <div class="system-art" aria-hidden="true">
+                <span>{ }</span>
+                <div class="system-line"></div>
+                <strong>Behind<br />the <em>scenes.</em></strong
+                ><small>STRUCTURE. RELIABILITY. INTENT.</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <p class="mini-label">FULLSTACK / BUILT</p>
+              <h3>Incident Analysis Dashboard</h3>
+              <p>
+                Keep track of customer incidents and analyze patterns for better
+                reliability.
+              </p>
+              <button
+                class="project-open project-cta"
+                type="button"
+                data-project="three"
+                aria-haspopup="dialog"
+                aria-label="Explore the backend story outline"
+              >
+                Explore the story outline
+              </button>
+            </div>
+          </article>
+          <article
+            class="card project-card"
+            data-category="experiments"
+            data-search="experiments project four template ai prototype evaluation"
+          >
+            <div class="project-art art-lime">
+              <span class="art-chip">FEATURED / BUILT</span>
+              <div class="experiment-art" aria-hidden="true">
+                <span>Fast but efficient</span
+                ><strong>Small fixes.<br /><em>Big savings.</em></strong>
+                <div class="experiment-orbs"><i></i><i></i><i></i></div>
+                <small>THOUGHTFUL TECHNICAL DESIGN.</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <p class="mini-label">EXPERIMENTS / BUILT</p>
+              <h3>Token Caching</h3>
+              <p>
+                A space for a real hypothesis, prototype, evaluation, and an
+                honest account of limitations.
+              </p>
+              <button
+                class="project-open project-cta"
+                type="button"
+                data-project="four"
+                aria-haspopup="dialog"
+                aria-label="Explore the AI experiment story outline"
+              >
+                Explore the story outline
+              </button>
+            </div>
+          </article>
+          <article class="card faq-card" id="recruiter-faq">
+            <div class="card-topline">
+              <span>FOR THE CURIOUS RECRUITER</span
+              ><span aria-hidden="true">?</span>
+            </div>
+            <h3>The short<br /><em>answers.</em></h3>
+            <details>
+              <summary>
+                My engineering approach?<span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                I focus on writing clean, maintainable code, leveraging best
+                practices, and continuously improving my skills through learning
+                and collaboration.
+              </p>
+            </details>
+            <details>
+              <summary>
+                What makes me a valuable addition to your team?<span
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p>
+                I am proactive, collaborative, enjoy learning and teaching,
+                customer-obsessed and energetic.
+              </p>
+            </details>
+            <details>
+              <summary>
+                What is something I've always wanted to build just for fun?<span
+                  aria-hidden="true"
+                  >+</span
+                >
+              </summary>
+              <p>
+                A pet owners hub and community for connecting pet owners and all
+                things pets - veterinary services, trainers, walkers, groomers.
+              </p>
+            </details>
+          </article>
+          <article class="card contact-card" id="contact">
+            <div class="card-topline"><span>04 / CONTACT</span></div>
+            <h3>Let’s build <em>something.</em></h3>
+            <p>
+              I’m interested in thoughtful digital products, creative
+              collaborations, and full-stack engineering opportunities.
+            </p>
+            <dl class="contact-channels">
+              <div>
+                <dt>Linkedin</dt>
+                <dd>
+                  <a
+                    class="text-link"
+                    href="https://www.linkedin.com/in/audrey-njenga/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@audrey-njenga</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd>
+                  <a
+                    class="text-link"
+                    href="https://github.com/Audrey-Njenga"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Audrey-Njenga</a
+                  >
+                </dd>
+              </div>
+            </dl>
+            <a
+              class="button button-dark"
+              href="https://github.com/Audrey-Njenga"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Find me on GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="wordmark" href="#top"
+        >AUDREY NJENGA<span class="coral">.</span></a
+      >
+      <p>STILL EXPLORING. STILL BUILDING.</p>
+      <a class="text-link" href="#top">Back to top ↑</a>
+    </footer>
+    <dialog
+      class="project-dialog"
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-lead"
+    >
+      <div class="dialog-inner">
+        <button
+          type="button"
+          class="dialog-close"
+          aria-label="Close card details"
+        >
+          ×
+        </button>
+        <p class="eyebrow" id="dialog-category"></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-lead"></p>
+        <div class="dialog-grid" id="dialog-grid"></div>
+        <div id="dialog-extra"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
